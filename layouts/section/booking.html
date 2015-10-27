@@ -1,14 +1,23 @@
 {{ partial "header.html" . }}
 
 <div class="col-xs-12 col-md-12">
-		<h2>Авиабилеты</h2>
-
-
-	    {{ range .Data.Pages }}
-
-		                 {{ .Content}}
-        {{ end }}
-
+		<h2>Отели & Гестхаусы</h2>
+		<ins class="bookingaff" data-aid="883296" data-target_aid="883293" data-prod="sbp" data-width="750" data-height="300" data-lang="ru" data-currency="RUB" data-cc1="ru">
+		    <!-- Anything inside will go away once widget is loaded. -->
+		    <a href="//www.booking.com?aid=883293">Booking.com</a>
+		</ins>
 </div>
+
+
+<script type="text/javascript">
+    (function(d, sc, u) {
+      var s = d.createElement(sc), p = d.getElementsByTagName(sc)[0];
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = u + '?v=' + (+new Date());
+      p.parentNode.insertBefore(s,p);
+      })(document, 'script', '//aff.bstatic.com/static/affiliate_base/js/flexiproduct.js');
+</script>
+
 
 {{ partial "footer.html" . }}
